@@ -7,4 +7,9 @@ describe('Game', function() {
 	it('should exist', function() {
 		expect(Game).to.be.an.object;
 	});
+
+	it('should be able to score normal points', function() {
+		Game.bowl(2)
+		expect(Game.getScore()).to.equal(2);
+	});
 });
