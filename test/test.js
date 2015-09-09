@@ -92,4 +92,26 @@ describe('Game', function() {
     expect(Game.getScore()).to.equal(200);
   });
 
+  it('should be able to score an alternative Dutch 200', function() {
+    Game.bowl(9);
+    Game.bowl(1);
+    Game.bowl(10);
+    Game.bowl(9);
+    Game.bowl(1);
+    Game.bowl(10);
+    Game.bowl(9);
+    Game.bowl(1);
+    Game.bowl(10);
+    Game.bowl(9);
+    Game.bowl(1);
+    Game.bowl(10);
+    Game.bowl(9);
+    Game.bowl(1);
+    Game.bowl(10);
+    Game.bowl(9);
+    Game.bowl(1);
+    Game.bowl(10);
+    expect(Game.getScore()).to.equal(200);
+  });
+
 });
